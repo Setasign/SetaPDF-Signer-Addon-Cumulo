@@ -1,0 +1,38 @@
+{
+    "name": "setasign/seta-pdf-signer-addon-cumulo",
+    "description": "A SetaPDF-Signer component signature module for the Cumulo API.",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Setasign GmbH & Co. KG",
+            "email": "support@setasign.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.2",
+        "ext-json": "*",
+        "psr/http-client": "^1.0",
+        "psr/http-factory": "^1.0",
+        "setasign/setapdf-signer": "^2.40"
+    },
+    "require-dev": {
+        "guzzlehttp/guzzle": "^7.0",
+        "http-interop/http-factory-guzzle": "^1.0",
+        "phpseclib/phpseclib": "^2.0",
+        "league/oauth2-client": "^2.6"
+    },
+
+    "autoload": {
+        "psr-4": {
+            "setasign\\SetaPDF\\Signer\\Module\\Cumulo\\": "src/"
+        }
+    },
+
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://www.setasign.com/downloads/"
+        }
+    ]
+}

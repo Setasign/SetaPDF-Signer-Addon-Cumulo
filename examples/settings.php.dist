@@ -1,0 +1,11 @@
+<?php
+
+declare(strict_types=1);
+
+return [
+    'apiUrl' => 'https://cumulo.jupiter.isolvtech.com:7443/service/',
+    'oauthUrl' => 'https://oauth2.jupiter.isolvtech.com:7443/oauth2',
+    'clientId' => 'your-client-id',
+    'clientSecret' => 'your-client-secret',
+    'demoUrl' => 'https://your-domain/SetaPDF-Signer-Addon-Cumulo/examples/',
+];
