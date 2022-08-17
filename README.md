@@ -20,13 +20,20 @@ for the requests. So you'll need an implementation of these. We recommend using 
     }
 ```
 
+Additionally to request an access token you'll need an oauth2 implementation such
+as [league/oauth2-client](https://github.com/thephpleague/oauth2-client).
+
+Sample code for this can be found in "[examples/generate-token.php](examples/generate-token.php)".
+
+Please note: because of oauth2 your domain MUST be available through HTTPS.
+
 ## Installation
 Add following to your composer.json:
 
 ```json
 {
     "require": {
-        "setasign/seta-pdf-signer-addon-cumulo": "^1.0"
+        "setasign/setapdf-signer-addon-cumulo": "^1.0"
     },
     "repositories": [
         {
@@ -41,14 +48,14 @@ and execute `composer update`. You need to define the `repository` to evaluate t
 [SetaPDF-Signer](https://www.setasign.com/signer) component
 (see [here](https://getcomposer.org/doc/faqs/why-can%27t-composer-load-repositories-recursively.md) for more details).
 
-### Evaluation version
+### Trial version
 By default, this packages depends on a licensed version of the [SetaPDF-Signer](https://www.setasign.com/signer)
-component. If you want to use it with an evaluation version please use following in your composer.json:
+component. If you want to use it with a trial version please use following in your composer.json:
 
 ```json
 {
     "require": {
-        "setasign/seta-pdf-signer-addon-cumulo": "dev-evaluation"
+        "setasign/setapdf-signer-addon-cumulo": "dev-trial"
     },
     "repositories": [
         {
