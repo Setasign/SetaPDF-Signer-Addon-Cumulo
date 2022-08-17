@@ -1,5 +1,5 @@
 {
-    "name": "setasign/seta-pdf-signer-addon-cumulo",
+    "name": "setasign/setapdf-signer-addon-cumulo",
     "description": "A SetaPDF-Signer component signature module for the Cumulo API.",
     "type": "library",
     "license": "MIT",
