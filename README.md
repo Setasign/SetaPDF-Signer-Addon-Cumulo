@@ -22,8 +22,10 @@ for the requests. So you'll need an implementation of these. We recommend using 
 
 Additionally to request an access token you'll need an oauth2 implementation such
 as [league/oauth2-client](https://github.com/thephpleague/oauth2-client).
+
 Sample code for this can be found in "[examples/generate-token.php](examples/generate-token.php)".
-Note: because of oauth2 your domain MUST be available through HTTPS.
+
+Please note: because of oauth2 your domain MUST be available through HTTPS.
 
 ## Installation
 Add following to your composer.json:
