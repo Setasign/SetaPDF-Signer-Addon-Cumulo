@@ -21,7 +21,6 @@ if (!file_exists('settings.php')) {
 $settings = require 'settings.php';
 
 $fileToSign = __DIR__ . '/assets/Laboratory-Report.pdf';
-$resultPath = 'signed.pdf';
 
 // to create or update your access token you have to call generate-token.php first
 if (!isset($_SESSION['accessToken']['access_token'])) {
@@ -77,7 +76,7 @@ try {
     $module->setSigningAlgorithm($_POST['algorithm']);
 
     // create a writer instance
-    $writer = new SetaPDF_Core_Writer_File($resultPath);
+    $writer = new SetaPDF_Core_Writer_String();
     // create the document instance
     $document = SetaPDF_Core_Document::loadByFilename($fileToSign, $writer);
 
@@ -86,8 +85,8 @@ try {
     $signer->setReason('Testing Cumulo!');
     $signer->sign($module);
 
-    echo '<a href="data:application/pdf;base64,' . base64_encode(file_get_contents($resultPath)) . '" ' .
-        'download="' . basename($resultPath) . '">download</a> | <a href="?">restart</a><br />';
+    echo '<a href="data:application/pdf;base64,' . base64_encode($writer->getBuffer()) . '" ' .
+        'download="result.pdf">download</a> | <a href="?">restart</a><br />';
 
 } catch (Throwable $e) {
     echo 'An error occurred: <pre>' . $e . '</pre>';
