@@ -1,6 +1,6 @@
 # SetaPDF-Signer-Addon-Cumulo
 This package offers a module for the [SetaPDF-Signer](https://www.setasign.com/signer) component that allow you to use 
-the [Cumulo API](https://cumulo.jupiter.isolvtech.com:7443/docs/api.html) to digital sign PDF documents in pure PHP.
+the [Cumulo API](https://docs.cumulokey.net/) to digital sign PDF documents in pure PHP.
 
 
 ## Requirements
