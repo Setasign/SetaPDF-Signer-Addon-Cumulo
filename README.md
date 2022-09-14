@@ -52,11 +52,12 @@ and execute `composer update`. You need to define the `repository` to evaluate t
 By default, this packages depends on a licensed version of the [SetaPDF-Signer](https://www.setasign.com/signer)
 component. If you want to use it with a trial version please use following in your composer.json:
 
-For PHP 7.*:
+For PHP 7.2 - 7.4:
 ```json
 {
     "require": {
-        "setasign/setapdf-signer-addon-cumulo": "dev-trial"
+        "setasign/setapdf-signer-addon-cumulo": "dev-trial",
+        "setasign/setapdf-signer_eval_ioncube_php7.1": "^2.40"        
     },
     "repositories": [
         {
@@ -70,7 +71,8 @@ For PHP 8.1:
 ```json
 {
     "require": {
-        "setasign/setapdf-signer-addon-cumulo": "dev-trial-8.1"
+        "setasign/setapdf-signer-addon-cumulo": "dev-trial",
+        "setasign/setapdf-signer_eval_ioncube_php8.1": "^2.40"        
     },
     "repositories": [
         {
