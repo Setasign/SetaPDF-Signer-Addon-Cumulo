@@ -7,5 +7,5 @@ return [
     'oauthUrl' => 'https://oauth2.jupiter.isolvtech.com:7443/oauth2',
     'clientId' => 'your-client-id',
     'clientSecret' => 'your-client-secret',
-    'demoUrl' => 'https://your-domain/SetaPDF-Signer-Addon-Cumulo/examples/',
+    'redirectUri' => 'https://your-domain/SetaPDF-Signer-Addon-Cumulo/examples/generate-token.php'',
 ];
