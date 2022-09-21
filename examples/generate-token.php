@@ -37,7 +37,9 @@ session_start();
 if (isset($_GET['reset'])) {
     $_SESSION = [];
 } elseif (isset($_SESSION['accessToken'])) {
-    $accessToken = new AccessToken($_SESSION['accessToken']);
+    $accessToken = new AccessToken([
+        'access_token' => $_SESSION['accessToken']
+    ]);
 }
 
 /** @noinspection PhpStatementHasEmptyBodyInspection */
