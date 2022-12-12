@@ -48,41 +48,6 @@ and execute `composer update`. You need to define the `repository` to evaluate t
 [SetaPDF-Signer](https://www.setasign.com/signer) component
 (see [here](https://getcomposer.org/doc/faqs/why-can%27t-composer-load-repositories-recursively.md) for more details).
 
-### Trial version
-By default, this packages depends on a licensed version of the [SetaPDF-Signer](https://www.setasign.com/signer)
-component. If you want to use it with a trial version please use following in your composer.json:
-
-For PHP 7.2 - 7.4:
-```json
-{
-    "require": {
-        "setasign/setapdf-signer-addon-cumulo": "dev-trial",
-        "setasign/setapdf-signer_eval_ioncube_php7.1": "^2.40"        
-    },
-    "repositories": [
-        {
-            "type": "composer",
-            "url": "https://www.setasign.com/downloads/"
-        }
-    ]
-}
-```
-For PHP 8.1:
-```json
-{
-    "require": {
-        "setasign/setapdf-signer-addon-cumulo": "dev-trial",
-        "setasign/setapdf-signer_eval_ioncube_php8.1": "^2.40"        
-    },
-    "repositories": [
-        {
-            "type": "composer",
-            "url": "https://www.setasign.com/downloads/"
-        }
-    ]
-}
-```
-
 ## License
 
 This package is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
